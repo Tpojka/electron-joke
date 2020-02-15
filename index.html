@@ -23,13 +23,13 @@
 
         document.addEventListener("DOMContentLoaded", () => {
             let joke
-            let populateJoke = function (joke) {
+            let populateJoke = (joke) => {
                 document.getElementById('joke').innerHTML = joke;
             }
-            let getJoke = function () {
+            let getJoke = () => {
                 ipcRenderer.send('joke-request')
             }
-            document.getElementById('btn-joke-next').onclick = function() {
+            document.getElementById('btn-joke-next').onclick = () => {
                 getJoke()
             }
             ipcRenderer.on('joke-response', (e, res) => {

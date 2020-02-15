@@ -1,0 +1,21 @@
+{
+  "name": "electron-joke",
+  "version": "1.0.0",
+  "description": "Joke of the Turn: desktop application that gets jokes on demand.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "test"
+  },
+  "keywords": [
+    "electron",
+    "application",
+    "entertainment"
+  ],
+  "author": "Goran Grbic",
+  "license": "MIT",
+  "dependencies": {
+    "materialize-css": "^1.0.0",
+    "node-fetch": "^2.6.0"
+  }
+}

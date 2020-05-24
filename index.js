@@ -43,7 +43,7 @@ let setJokeFromSource = (e, source) => {
       return res.json()
     })
     .then((res) => {
-      e.sender.send('joke-response', source.exportText(res))
+      e.sender.send('joke-response', source.exportText(res), source.url)
     }, reason => {
       e.sender.send('joke-response', 'Try again...')
     })

@@ -13,6 +13,7 @@
       <h4>Joke of the turn</h4>
 
       <div id="joke" style="min-height: 100px;"></div>
+      <div id="url" style="min-height: 100px;"></div>
 
       <a id="btn-joke-next" class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>next turn</a>
 
@@ -32,9 +33,10 @@
             document.getElementById('btn-joke-next').onclick = () => {
                 getJoke()
             }
-            ipcRenderer.on('joke-response', (e, res) => {
+            ipcRenderer.on('joke-response', (e, res, url = '') => {
                 joke = res.replace(/\r\n/g, '')
                 populateJoke(joke)
+                document.getElementById('url').innerHTML = url;
             })
 
             // ignite

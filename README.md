@@ -1,7 +1,7 @@
 ## About Electron Joke
 
 Electron joke is source code for desktop application that is built with [electron js](https://electronjs.org) framework.
-It also uses API service from several websites: [icanhazdadjoke](icanhazdadjoke), [internet Chuck Norris database](http://icndb.com), [yomomma](https://yomomma.info/), [geek jokes](https://geek-jokes.sameerkumar.website), and [corporate-buzz-words generator](https://corporatebs-generator.sameerkumar.website/).
+It also uses API service from several websites: [icanhazdadjoke](https://icanhazdadjoke.com/api), [internet Chuck Norris database](http://icndb.com), [yomomma](https://yomomma.info/), [geek jokes](https://geek-jokes.sameerkumar.website), and [corporate-buzz-words generator](https://corporatebs-generator.sameerkumar.website/).
 
 ## Prerequisites
 
